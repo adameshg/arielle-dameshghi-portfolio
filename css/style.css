@@ -1,0 +1,318 @@
+
+  /***********/
+ /* General */
+/***********/
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding-top: 3.25em;
+    text-align: center;
+}
+
+.about-content,
+.skills-container,
+#contact form {
+    width: 80%;
+    margin: auto;
+}
+
+  /**********/
+ /* Themes */
+/**********/
+
+.box-shadow {
+    box-shadow: 0 8px 9px -9px #000;
+}
+
+.button {
+    color: #fff;
+    font-size: 1.3em;
+    min-width: 7em;
+    height: 2em;
+    border: 1px solid #000;
+    border-radius: .25em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #32cabd;
+}
+
+  /**********/
+ /* Navbar */
+/**********/
+
+nav {
+    background-color: #32cabd;
+
+}
+
+  /************/
+ /* Showcase */
+/************/
+
+#showcase {
+    padding-top: 6em;
+    background-color: #32cabd;
+    color: #f8f9fa;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.profile-picture {
+    width: 14em;
+    transform: rotate(35deg);
+    border-radius: 50%;
+    border: solid 2px #f8f9fa;
+}
+
+#showcase h1 {
+    margin-top: .5em;
+    font-weight: 300;
+}
+
+#showcase p {
+    font-size: 1.25em;
+    font-weight: 300;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+
+.social-container ul {
+    display: flex;
+    justify-content: center;
+}
+
+.social-container li {
+    list-style: none;
+    margin: 0 1.5em;
+}
+
+.social-container i {
+    font-size: 2em;
+    color: #f8f9fa;
+}
+
+#showcase .down {
+    margin-top: 3.5em;
+}
+
+#showcase .down i {
+    color: #f8f9fa;
+}
+
+  /*********/
+ /* About */
+/*********/
+
+.about-content {
+    text-align: left;
+}
+
+#about p {
+    font-size: 1.25em;
+}
+
+  /**********/
+ /* Skills */
+/**********/
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.skills-container svg {
+    width: 3em;
+    height: 3em;
+}
+
+.skills-container div:nth-of-type(3) svg {
+    padding-left: .5em;
+}
+
+.skills-container div:nth-of-type(5) svg {
+    padding-left: .3em;
+}
+
+  /************/
+ /* Projects */
+/************/
+
+#projects h2 {
+    margin-bottom: .5em;
+}
+
+#projects h3 {
+    margin-bottom: .5em;
+}
+
+#projects img {
+    width: 20em;
+}
+
+#projects .icon-container svg {
+    width: 2em;
+    height: 2em;
+    margin: 0 .5em;
+}
+
+#projects .icon-container svg:nth-of-type(1) {
+    width: 2em;
+    height: 2em;
+    padding-right: .5em;
+    padding-top: .4em;
+}
+
+#projects .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .5em;
+}
+
+#projects p {
+    margin-top: .5em;
+    font-size: 1.25em;
+}
+
+#projects .button-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1.5em;
+}
+
+  /***********/
+ /* Contact */
+/***********/
+
+#contact {
+    background-color: #32cabd;
+    color: #f8f9fa;
+}
+
+#contact .social-container {
+    padding-top: 1em;
+    padding-bottom: 0;
+    font-size: .8em;
+    border-top: 2px solid #f8f9fa;
+    border-bottom: 2px solid #f8f9fa;
+    width: 50%;
+    margin: auto auto 3em auto;
+}
+
+#contact h3 {
+    margin-bottom: .5em;
+}
+
+#contact label {
+    display: block;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    border-radius: .3em;
+    padding: .25em;
+    background-color: #eff7f6;
+}
+
+#contact input {
+    margin-bottom: .5em;
+}
+
+#contact textarea {
+    height: 120px;
+}
+
+#contact button {
+    color: #32cabd;
+    font-size: 1.3em;
+    font-weight: 500;
+    width: 100%;
+    height: 2em;
+    border: 1px solid #000;
+    border-radius: .25em;
+    background-color: #eff7f6;
+    margin: .5em 0 1em 0;
+}
+
+  /*****************/
+ /* Media Queries */
+/*****************/
+
+@media (min-width: 576px) {
+    
+    section {
+        padding-top: 4.5em;
+    }
+    
+    #about,
+    #skills,
+    #projects {
+        max-width: 800px;
+        margin: auto;
+    }
+    
+    /* Showcase */
+    
+    #showcase h1 {
+        font-size: 3.5em;
+        font-weight: 400;
+    }
+    
+    #showcase .down {
+        margin-top: 8em;
+    }
+
+    /* About */
+   
+    #about p {
+        font-size: initial;
+        text-align: center;
+    }
+
+    /* Skills */
+
+    .skills-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1em;
+        max-width: 500px;
+    }
+
+    .skills-container p {
+        font-size: initial;
+        margin-top: .5em;
+    }
+
+    /* Projects */
+
+    #projects .button-container {
+        max-width: 500px;
+        margin: auto auto 1.5em auto;
+    }
+
+    /* Contact */
+
+    #contact form,
+    #contact .social-container {
+        max-width: 500px;
+    }
+
+    #contact .social-container {
+        font-size: 1.25em;
+    }
+
+}
+
+
+
+
