@@ -126,10 +126,6 @@ nav {
     margin-bottom: 1.5em;
 }
 
-#about span {
-    font-size: 1.3em;
-}
-
   /**********/
  /* Skills */
 /**********/
@@ -171,7 +167,7 @@ nav {
     margin: 0 .5em;
 }
 
-#projects #js-project-logo {
+#projects .js-project-logo {
     padding-right: .5em;
     padding-top: .4em;
 }
@@ -256,7 +252,7 @@ nav {
     border-radius: .25em;
     background-color: #eff7f6;
     opacity: .9;
-    margin: .5em 0 1em 0;
+    margin: .5em 0 1.5em 0;
 }
 
   /*****************/
